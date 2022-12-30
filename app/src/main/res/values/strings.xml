@@ -1,0 +1,421 @@
+<resources>
+    <string name="app_name">SIS</string>
+    <string name="password">^(?=.*[0–9])(?=.*[a-z])(?=.*[A-Z]).{8,20}$</string>
+    <string name="password2">^(?=.*[0–9])(?=.*[a-z])(?=.*[A-Z]).{8,20}$</string>
+    <string name="name">^[a-zA-Z\\s]+</string>
+    <string name="date">/^\d{2}\/\d{2}\/\d{4}$/</string>
+    <string name="email_address">Enter your email address to verify your account</string>
+    <string name="otp_text">Enter the OTP code sent to your email address</string>
+    <string name="otp_phone_text">Enter the OTP code sent to your phone</string>
+    <string name="phoneNumber">Enter your phone number to verify your account</string>
+    <string name="finalMessage">Thanks for your application.\n You need to wait for your request to be approved by admin.\n You will be notified with an email regarding your application status!\nPress the button below to return to Login screen.</string>
+    <string name="passRec">Enter your new password and confirm it to recover your account</string>
+    <string-array name="days_list">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="userType">
+        <item>Student</item>
+        <item>Teacher</item>
+        <item>Admin</item>
+    </string-array>
+    <string-array name="countries_list">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua and Deps</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Central African Rep</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo</item>
+        <item>Congo {Democratic Rep}</item>
+        <item>Costa Rica</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>East Timor</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Greece</item>
+        <item>Grenada</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland {Republic}</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Ivory Coast</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Korea North</item>
+        <item>Korea South</item>
+        <item>Kosovo</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macedonia</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar, {Burma}</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Qatar</item>
+        <item>Romania</item>
+        <item>Russian Federation</item>
+        <item>Rwanda</item>
+        <item>St Kitts and Nevis</item>
+        <item>St Lucia</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Sao Tome and Principe</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Tuvalu</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vatican City</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Yemen</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+
+    </string-array>
+    <string-array name="departments_list">
+        <item>General Agriculture</item>
+        <item>Agriculture Production And Management</item>
+        <item>Agricultural Economics</item>
+        <item>Animal Sciences</item>
+        <item>Food Science</item>
+        <item>Plant Science And Agronomy</item>
+        <item>Soil Science</item>
+        <item>Miscellaneous Agriculture</item>
+        <item>Forestry</item>
+        <item>Natural Resources Management</item>
+        <item>Fine Arts</item>
+        <item>Drama And Theater Arts</item>
+        <item>Music</item>
+        <item>Visual And Performing Arts</item>
+        <item>Commercial Art And Graphic Design</item>
+        <item>Film Video And Photographic Arts</item>
+        <item>Studio Arts</item>
+        <item>Miscellaneous Fine Arts</item>
+        <item>Environmental Science</item>
+        <item>Biology</item>
+        <item>Biochemical Sciences</item>
+        <item>Botany</item>
+        <item>Molecular Biology</item>
+        <item>Ecology</item>
+        <item>Genetics</item>
+        <item>Microbiology</item>
+        <item>Pharmacology</item>
+        <item>Physiology</item>
+        <item>Zoology</item>
+        <item>Neuroscience</item>
+        <item>Miscellaneous Biology</item>
+        <item>Cognitive Science And Biopsychology</item>
+        <item>General Business</item>
+        <item>Accounting</item>
+        <item>Actuarial Science</item>
+        <item>Business Management And Administration</item>
+        <item>Operations Logistics And E-Commerce</item>
+        <item>Business Economics</item>
+        <item>Marketing And Marketing Research</item>
+        <item>Finance</item>
+        <item>Human Resources And Personnel Management</item>
+        <item>International Business</item>
+        <item>Hospitality Management</item>
+        <item>Management Information Systems And Statistics</item>
+        <item>Miscellaneous Business And Medical Administration</item>
+        <item>Communications</item>
+        <item>Journalism</item>
+        <item>Mass Media</item>
+        <item>Advertising And Public Relations</item>
+        <item>Communication Technologies</item>
+        <item>Computer And Information Systems</item>
+        <item>Computer Programming And Data Processing</item>
+        <item>Computer Science</item>
+        <item>Information Sciences</item>
+        <item>Computer Administration Management And Security</item>
+        <item>Computer Networking And Telecommunications</item>
+        <item>Mathematics</item>
+        <item>Applied Mathematics</item>
+        <item>Statistics And Decision Science</item>
+        <item>Mathematics And Computer Science</item>
+        <item>General Education</item>
+        <item>Educational Administration And Supervision</item>
+        <item>School Student Counseling</item>
+        <item>Elementary Education</item>
+        <item>Mathematics Teacher Education</item>
+        <item>Physical And Health Education Teaching</item>
+        <item>Early Childhood Education</item>
+        <item>Science And Computer Teacher Education</item>
+        <item>Secondary Teacher Education</item>
+        <item>Special Needs Education</item>
+        <item>Social Science Or History Teacher Education</item>
+        <item>Teacher Education: Multiple Levels</item>
+        <item>Language And Drama Education</item>
+        <item>Art And Music Education</item>
+        <item>Miscellaneous Education</item>
+        <item>Library Science</item>
+        <item>Architecture</item>
+        <item>General Engineering</item>
+        <item>Aerospace Engineering</item>
+        <item>Biological Engineering</item>
+        <item>Architectural Engineering</item>
+        <item>Biomedical Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Engineering Mechanics Physics And Science</item>
+        <item>Environmental Engineering</item>
+        <item>Geological And Geophysical Engineering</item>
+        <item>Industrial And Manufacturing Engineering</item>
+        <item>Materials Engineering And Materials Science</item>
+        <item>Mechanical Engineering</item>
+        <item>Metallurgical Engineering</item>
+        <item>Mining And Mineral Engineering</item>
+        <item>Naval Architecture And Marine Engineering</item>
+        <item>Nuclear Engineering</item>
+        <item>Petroleum Engineering</item>
+        <item>Miscellaneous Engineering</item>
+        <item>Engineering Technologies</item>
+        <item>Engineering And Industrial Management</item>
+        <item>Electrical Engineering Technology</item>
+        <item>Industrial Production Technologies</item>
+        <item>Mechanical Engineering Related Technologies</item>
+        <item>Miscellaneous Engineering Technologies</item>
+        <item>Materials Science</item>
+        <item>Nutrition Sciences</item>
+        <item>General Medical And Health Services</item>
+        <item>Communication Disorders Sciences And Services</item>
+        <item>Health And Medical Administrative Services</item>
+        <item>Medical Assisting Services</item>
+        <item>Medical Technologies Technicians</item>
+        <item>Health And Medical Preparatory Programs</item>
+        <item>Nursing</item>
+        <item>Pharmacy Pharmaceutical Sciences And Administration</item>
+        <item>Treatment Therapy Professions</item>
+        <item>Community And Public Health</item>
+        <item>Miscellaneous Health Medical Professions</item>
+        <item>Area Ethnic And Civilization Studies</item>
+        <item>Linguistics And Comparative Language And Literature</item>
+        <item>French German Latin And Other Common Foreign Language Studies</item>
+        <item>Other Foreign Languages</item>
+        <item>English Language And Literature</item>
+        <item>Composition And Rhetoric</item>
+        <item>Liberal Arts</item>
+        <item>Humanities</item>
+        <item>Intercultural And International Studies</item>
+        <item>Philosophy And Religious Studies</item>
+        <item>Theology And Religious Vocations</item>
+        <item>Anthropology And Archeology</item>
+        <item>Art History And Criticism</item>
+        <item>History</item>
+        <item>United States History</item>
+        <item>Cosmetology Services And Culinary Arts</item>
+        <item>Family And Consumer Sciences</item>
+        <item>Military Technologies</item>
+        <item>Physical Fitness Parks Recreation And Leisure</item>
+        <item>Construction Services</item>
+        <item>"Electrical</item>
+        <item>Transportation Sciences And Technologies</item>
+        <item>Multi/Interdisciplinary Studies</item>
+        <item>Court Reporting</item>
+        <item>Pre-Law And Legal Studies</item>
+        <item>Criminal Justice And Fire Protection</item>
+        <item>Public Administration</item>
+        <item>Public Policy</item>
+        <item>Physical Sciences</item>
+        <item>Astronomy And Astrophysics</item>
+        <item>Atmospheric Sciences And Meteorology</item>
+        <item>Chemistry</item>
+        <item>Geology And Earth Science</item>
+        <item>Geosciences</item>
+        <item>Oceanography</item>
+        <item>Physics</item>
+        <item>Multi-Disciplinary Or General Science</item>
+        <item>"Nuclear</item>
+        <item>Psychology</item>
+        <item>Educational Psychology</item>
+        <item>Clinical Psychology</item>
+        <item>Counseling Psychology</item>
+        <item>Industrial And Organizational Psychology</item>
+        <item>Social Psychology</item>
+        <item>Miscellaneous Psychology</item>
+        <item>Human Services And Community Organization</item>
+        <item>Social Work</item>
+        <item>Interdisciplinary Social Sciences</item>
+        <item>General Social Sciences</item>
+        <item>Economics</item>
+        <item>Criminology</item>
+        <item>Geography</item>
+        <item>International Relations</item>
+        <item>Political Science And Government</item>
+        <item>Sociology</item>
+        <item>Miscellaneous Social Sciences</item>
+
+    </string-array>
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Unknown</item>
+    </string-array>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pp">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).   Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.  Where can I get some? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.  5 \tparagraphs \twords \tbytes \tlists \tStart with 'Lorem ipsum dolor sit amet...' "</string>
+</resources>

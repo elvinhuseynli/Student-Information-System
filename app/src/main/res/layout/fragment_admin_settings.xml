@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".admin.settings.AdminSettingsFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="Settings"
+        android:layout_marginTop="5dp"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:backgroundTint="#fffeff"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_password_24"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change your password"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image1"/>
+
+            <TextView
+                android:id="@+id/text1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Increase your security by changing password"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text1"
+                app:layout_constraintStart_toEndOf="@id/image1"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/changeEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:backgroundTint="#fffeff"
+        app:layout_constraintTop_toBottomOf="@id/changePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_email_24"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change your email address"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image2"/>
+
+            <TextView
+                android:id="@+id/text2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Increase your security by changing email address"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text2"
+                app:layout_constraintStart_toEndOf="@id/image2"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:backgroundTint="#fffeff"
+        app:layout_constraintTop_toBottomOf="@id/help"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_logout_24"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log out of account"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image3"/>
+
+            <TextView
+                android:id="@+id/text3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change your account or retry logging in again"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text3"
+                app:layout_constraintStart_toEndOf="@id/image3"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:backgroundTint="#fffeff"
+        app:layout_constraintTop_toBottomOf="@id/changeEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_help_24"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get help"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image4"/>
+
+            <TextView
+                android:id="@+id/text4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get help from developers or report a bug"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text4"
+                app:layout_constraintStart_toEndOf="@id/image4"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".admin.courses.AdminCoursesAdditionFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="Add Courses"
+        android:layout_marginTop="5dp"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView">
+
+        <EditText
+            android:id="@+id/courseCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border"
+            android:hint="Course Code"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Course Name"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseCode"/>
+
+        <EditText
+            android:id="@+id/courseEcts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Course Ects"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseName"/>
+
+        <EditText
+            android:id="@+id/midtermPercentage"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Midterm"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseEcts"/>
+
+        <EditText
+            android:id="@+id/finalPercentage"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Final"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseEcts"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/courseDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:hint="Course Department"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/midtermPercentage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/courseTutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Course Tutor"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseDepartment"/>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/courseDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/border"
+            android:hint="Course Day"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/courseTutor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <com.vicmikhailau.maskededittext.MaskedEditText
+            android:id="@+id/courseStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Course Starting Time (hh:mm)"
+            android:textSize="20sp"
+            android:digits=":1234567890"
+            app:mask="##:##"
+            android:inputType="time"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseDay"/>
+
+        <com.vicmikhailau.maskededittext.MaskedEditText
+            android:id="@+id/courseEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Course Ending Time (hh:mm)"
+            android:textSize="20sp"
+            android:digits=":1234567890"
+            app:mask="##:##"
+            android:inputType="time"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseStartTime"/>
+
+        <EditText
+            android:id="@+id/courseSyllabus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Course Syllabus"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseEndTime"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:text="Add course"
+        android:textStyle="bold"
+        app:cornerRadius = "10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:indeterminateTint="@color/white"
+        android:indeterminate="true"
+        android:layout_marginTop="77dp"
+        android:visibility="invisible"
+        android:elevation="5dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

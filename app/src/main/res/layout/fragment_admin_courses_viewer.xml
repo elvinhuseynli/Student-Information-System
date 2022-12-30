@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".admin.courses.AdminCoursesViewerFragment">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="Course Details"
+        android:layout_marginTop="5dp"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView">
+
+        <TextView
+            android:id="@+id/courseCodeText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Course Code:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/courseCode"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@id/courseCodeText"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/courseNameText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Course Name:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseCode"/>
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@id/courseNameText"
+            app:layout_constraintTop_toBottomOf="@id/courseCode"/>
+
+        <TextView
+            android:id="@+id/courseEctsText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Course Ects:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseName"/>
+
+        <TextView
+            android:id="@+id/courseEcts"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@id/courseTutorText"
+            app:layout_constraintTop_toBottomOf="@id/courseName"/>
+
+        <TextView
+            android:id="@+id/courseGradeText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Midterm/Final %:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseEcts"/>
+
+        <TextView
+            android:id="@+id/courseGrade"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@id/courseTutorText"
+            app:layout_constraintTop_toBottomOf="@id/courseEcts"/>
+
+        <TextView
+            android:id="@+id/courseTutorText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Course Tutor:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseGrade"/>
+
+        <TextView
+            android:id="@+id/courseTutor"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@id/courseTutorText"
+            app:layout_constraintTop_toBottomOf="@id/courseGrade"/>
+
+        <TextView
+            android:id="@+id/courseDepartmentText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Course Department:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseTutor"/>
+
+        <TextView
+            android:id="@+id/courseDepartment"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@id/courseDepartmentText"
+            app:layout_constraintTop_toBottomOf="@id/courseTutor"/>
+
+        <TextView
+            android:id="@+id/courseDayText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Course Day/Days:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseDepartment"/>
+
+        <TextView
+            android:id="@+id/courseDay"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@id/courseDayText"
+            app:layout_constraintTop_toBottomOf="@id/courseDepartment"/>
+
+        <TextView
+            android:id="@+id/courseHoursText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Course Hours:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseDay"/>
+
+        <TextView
+            android:id="@+id/courseHours"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@id/courseHoursText"
+            app:layout_constraintTop_toBottomOf="@id/courseDay"/>
+
+        <TextView
+            android:id="@+id/courseSyllabusText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Course Syllabus:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseHours"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fillViewport="true"
+            app:layout_constraintTop_toBottomOf="@id/courseSyllabusText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/courseSyllabus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:indeterminateTint="@color/black"
+        android:indeterminate="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
